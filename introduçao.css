@@ -1,0 +1,52 @@
+.introduçao {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.introduçao h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+}
+
+
+.introduçao h1::before {
+    content:"";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(img/catdetail.svg) no-repeat;       
+
+ }
+
+
+ .introduçao p {
+    font-size: 1.5rem;
+ }
+
+ @media (max-width: 900px) {
+    .introduçao h1 {
+        font-size: 2rem;
+    }
+ }
+
+ @media (max-width: 900px) {
+    .introduçao {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }  
+ }
+
+ @media (max-width: 650px) {
+    .introduçao {
+        grid-template-columns: 1fr;
+    }
+    .introduçao img {
+        display: none;
+    }
+ }

@@ -1,0 +1,157 @@
+.formaçao {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+
+.formaçao-container {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    position: relative;
+}
+
+.formaçao-container::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: url("img/cat-lol-svgrepo-com.svg") no-repeat center;
+    position: absolute;
+    bottom: -100px;
+    left: -4px;
+}
+
+.formaçao-container .subtitulo {
+    max-width: 5ch;
+}
+
+.formaçao-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+}
+
+.cursos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+
+}
+
+.cursos {
+    flex: 1;
+    background-color: #0e0d0d;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cursos-estado {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #a3a3a3;
+}
+
+.cursos-nome {
+    flex: 1;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.cursos-nome::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 35px;
+    background: rgba(233, 139, 190, 0.932);
+    position: absolute;
+    top: 24px;
+    left: -1px;
+  }
+
+.cursos-inst {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #a3a3a3;
+}
+
+.cursos-horas {
+    margin-bottom: 60px;
+}
+
+.horas-cursos {
+    position: relative;
+}
+
+.horas-cursos h3 {
+    font-size: 0.853rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.horas-cursos h3::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -36px;
+    top: -4px;
+    
+}
+
+.cursos-horas h3::before {
+    background: url("img/circular-clock-with-on-clock-hand-svgrepo-com.svg") no-repeat center center;
+}
+
+.idiomas h3::before {
+    background: url("img/cha-translate-2-svgrepo-com.svg") no-repeat center center;
+}
+
+.horas-cursos span {
+    color: #a3a3a3;
+}
+
+.cursos-horas li {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 900px) {
+    .formaçao-container {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 20px;
+    }
+
+    .horas-cursos h3::before {
+        display: block;
+        content: "";
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: -2px;
+        top: -32px;
+    }
+
+    .formaçao-container .subtitulo {
+        word-break: normal;
+    }
+
+    .formaçao-texto {
+        font-size: 1.125rem;
+    }
+}

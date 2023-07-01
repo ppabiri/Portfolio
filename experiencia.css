@@ -1,0 +1,85 @@
+.experiencia {
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+.experiencia .subtitulo {
+    color: rgba(219, 58, 147, 0.295);
+    max-width: 4ch;
+}
+
+.experiencia-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 60px;
+}
+
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background-color: #db3b931c;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.empresa img {
+    display: block;
+    width: 50px;
+    height: 101px;
+    top: -51px;
+    left: -20px;
+    position: absolute;
+    
+}
+
+.empresa-ano {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 10px;
+    left: -70px;
+}
+
+.empresa-nome {
+    font-size: 1.240rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.empresa-texto {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: rgb(7, 7, 7);
+}
+
+@media (max-width: 900px) {
+    .experiencia {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .experiencia .subtitulo {
+        color: #db3a93e3;
+    }
+
+    .experiencia-texto {
+        font-size: 1.25rem;
+    }
+
+    .empresa-ano {
+        position: initial;
+        width: initial;
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+    .empresa {
+        grid-template-columns: 1fr;
+    }
+}
